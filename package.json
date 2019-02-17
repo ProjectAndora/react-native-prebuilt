@@ -1,6 +1,7 @@
 {
   "dependencies": {
-    "react-native": "0.58.4"
+    "react-native": "0.58.4",
+    "react-native-gesture-handler": "1.0.15"
   },
   "private": true
 }
