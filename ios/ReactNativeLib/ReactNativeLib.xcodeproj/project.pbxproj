@@ -8,12 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		19869EA522198E860084709E /* ReactNativeLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 19869EA422198E850084709E /* ReactNativeLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19869EAB2219923F0084709E /* ReactRootView.h in Headers */ = {isa = PBXBuildFile; fileRef = 19869EA92219923F0084709E /* ReactRootView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19869EAC2219923F0084709E /* ReactRootView.m in Sources */ = {isa = PBXBuildFile; fileRef = 19869EAA2219923F0084709E /* ReactRootView.m */; };
+		5F8DB650C336D76511077CDD /* libPods-ReactNativeLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C046879869071256A5899BFA /* libPods-ReactNativeLib.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		19869E9822198DF50084709E /* ReactNativeLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReactNativeLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		19869EA422198E850084709E /* ReactNativeLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReactNativeLib.h; sourceTree = "<group>"; };
 		19869EA722198E930084709E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19869EA92219923F0084709E /* ReactRootView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReactRootView.h; sourceTree = "<group>"; };
+		19869EAA2219923F0084709E /* ReactRootView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReactRootView.m; sourceTree = "<group>"; };
+		C046879869071256A5899BFA /* libPods-ReactNativeLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactNativeLib.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB882B44EFA1977286E1E2B1 /* Pods-ReactNativeLib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeLib.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-ReactNativeLib/Pods-ReactNativeLib.debug.xcconfig"; sourceTree = "<group>"; };
+		F67C9F51EB35B038E007A002 /* Pods-ReactNativeLib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeLib.release.xcconfig"; path = "../Pods/Target Support Files/Pods-ReactNativeLib/Pods-ReactNativeLib.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F8DB650C336D76511077CDD /* libPods-ReactNativeLib.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -33,6 +42,8 @@
 				19869EA322198E850084709E /* Internal */,
 				19869EA622198E930084709E /* Resources */,
 				19869E9922198DF50084709E /* Products */,
+				1DC5E37683C1A28E48C4BC92 /* Pods */,
+				9CF2214F4F9E25DF6AE81A0C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -48,6 +59,8 @@
 			isa = PBXGroup;
 			children = (
 				19869EA422198E850084709E /* ReactNativeLib.h */,
+				19869EA92219923F0084709E /* ReactRootView.h */,
+				19869EAA2219923F0084709E /* ReactRootView.m */,
 			);
 			path = Internal;
 			sourceTree = "<group>";
@@ -60,6 +73,23 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		1DC5E37683C1A28E48C4BC92 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EB882B44EFA1977286E1E2B1 /* Pods-ReactNativeLib.debug.xcconfig */,
+				F67C9F51EB35B038E007A002 /* Pods-ReactNativeLib.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9CF2214F4F9E25DF6AE81A0C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C046879869071256A5899BFA /* libPods-ReactNativeLib.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -68,6 +98,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				19869EA522198E860084709E /* ReactNativeLib.h in Headers */,
+				19869EAB2219923F0084709E /* ReactRootView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +109,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 19869EA022198DF50084709E /* Build configuration list for PBXNativeTarget "ReactNativeLib" */;
 			buildPhases = (
+				D520C69440A05AC182A493D0 /* [CP] Check Pods Manifest.lock */,
 				19869E9322198DF50084709E /* Headers */,
 				19869E9422198DF50084709E /* Sources */,
 				19869E9522198DF50084709E /* Frameworks */,
@@ -132,11 +164,33 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D520C69440A05AC182A493D0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReactNativeLib-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		19869E9422198DF50084709E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19869EAC2219923F0084709E /* ReactRootView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +317,7 @@
 		};
 		19869EA122198DF50084709E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB882B44EFA1977286E1E2B1 /* Pods-ReactNativeLib.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +342,7 @@
 		};
 		19869EA222198DF50084709E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F67C9F51EB35B038E007A002 /* Pods-ReactNativeLib.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
