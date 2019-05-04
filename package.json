@@ -1,7 +1,15 @@
 {
+  "scripts": {
+    "build": "node scripts/build.js"
+  },
   "dependencies": {
     "react-native": "0.58.4",
     "react-native-gesture-handler": "1.0.15"
+  },
+  "devDependencies": {
+    "rimraf": "^2.6.3",
+    "ncp": "^2.0.0",
+    "bplist": "^0.0.4"
   },
   "private": true
 }

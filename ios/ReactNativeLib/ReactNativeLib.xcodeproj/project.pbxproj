@@ -111,6 +111,7 @@
 			buildPhases = (
 				D520C69440A05AC182A493D0 /* [CP] Check Pods Manifest.lock */,
 				19869E9322198DF50084709E /* Headers */,
+				19295228227DCB2E00077C7F /* ShellScript */,
 				19869E9422198DF50084709E /* Sources */,
 				19869E9522198DF50084709E /* Frameworks */,
 				19869E9622198DF50084709E /* Resources */,
@@ -165,6 +166,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		19295228227DCB2E00077C7F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export TARGET_BUILD_DIR=${TARGET_BUILD_DIR}\n";
+		};
 		D520C69440A05AC182A493D0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
